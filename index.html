@@ -6,6 +6,8 @@
         body {
             font-family: Arial;
             background: #f3f3f3;
+            margin: 0;
+            padding: 0;
         }
         
         header {
@@ -26,7 +28,6 @@
             font-size: large;
             font-family: Arial;
             font-weight: bold;
-            align-self: bottom;
         }
 
         section {
@@ -41,8 +42,8 @@
         ul.menu {
             list-style: none;
             background: #d3560e;
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             text-align: right;
         }
 
@@ -70,24 +71,14 @@
             color: #fff;
         }
 
-        ul.menu li a:hover {
-            background-color: #14c8ff;
-            color: #fff;
-        }
-
         @media (max-width: 768px) {
             ul.menu {
-                display: none;
-            }
-
-            ul.menu.active {
                 display: block;
+                background-color: #d3560e;
             }
 
             ul.menu li {
                 display: block;
-                text-align: center;
-                margin: 0;
             }
 
             ul.menu li a {
@@ -101,12 +92,12 @@
     <header>
         Arnab Rong's Personal Website
     </header>
-    <ul class = "menu">
+    <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutme.html">About Me</a></li>
         <li><a href="myeducation.html">My Education</a></li>
         <li><a href="#">Projects</a></li>
-        <li><a hrefcontact.html">Contact</a></li>`
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 
     <section>
@@ -117,6 +108,5 @@
     <footer>
         Thank you for visiting.
     </footer>
-
 </body>
 </html>
