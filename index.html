@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
         }
-        
+
         header {
             background-color: #b9b9b9d5;
             color: #000;
@@ -71,10 +71,22 @@
             color: #fff;
         }
 
+        .menu-toggle {
+            display: none;
+        }
+
         @media (max-width: 768px) {
             ul.menu {
-                display: block;
+                display: none;
                 background-color: #d3560e;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            ul.menu.active {
+                display: block;
             }
 
             ul.menu li {
@@ -85,6 +97,13 @@
                 width: 100%;
                 padding: 15px 0;
             }
+
+            .menu-toggle {
+                display: block;
+                text-align: right;
+                padding: 20px;
+                cursor: pointer;
+            }
         }
     </style>
 </head>
@@ -92,6 +111,9 @@
     <header>
         Arnab Rong's Personal Website
     </header>
+    
+    <div class="menu-toggle">&#9776;</div>
+    
     <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutme.html">About Me</a></li>
@@ -108,5 +130,14 @@
     <footer>
         Thank you for visiting.
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
