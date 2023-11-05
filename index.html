@@ -69,6 +69,32 @@
             background-color: #14c8ff;
             color: #fff;
         }
+
+        ul.menu li a:hover {
+            background-color: #14c8ff;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            ul.menu {
+                display: none;
+            }
+
+            ul.menu.active {
+                display: block;
+            }
+
+            ul.menu li {
+                display: block;
+                text-align: center;
+                margin: 0;
+            }
+
+            ul.menu li a {
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
     </style>
 </head>
 <body>
