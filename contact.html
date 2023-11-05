@@ -8,8 +8,10 @@
         body {
             font-family: Arial;
             background: #f3f3f3;
+            margin: 0;
+            padding: 0;
         }
-        
+
         header {
             background-color: #b9b9b9d5;
             color: #000;
@@ -28,7 +30,6 @@
             font-size: large;
             font-family: Arial;
             font-weight: bold;
-            align-self: bottom;
         }
 
         section {
@@ -43,8 +44,8 @@
         ul.menu {
             list-style: none;
             background: #d3560e;
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             text-align: right;
         }
 
@@ -71,6 +72,41 @@
             background-color: #14c8ff;
             color: #fff;
         }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            ul.menu {
+                display: none;
+                background-color: #d3560e;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            ul.menu.active {
+                display: block;
+            }
+
+            ul.menu li {
+                display: block;
+            }
+
+            ul.menu li a {
+                width: 100%;
+                padding: 15px 0;
+            }
+
+            .menu-toggle {
+                display: block;
+                text-align: right;
+                padding: 20px;
+                cursor: pointer;
+            }
+        }
     </style>
 </head>
 <body>
@@ -95,6 +131,15 @@
     <footer>
         Thank you for visiting.
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
     
 </body>
 </html>
