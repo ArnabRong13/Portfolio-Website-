@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10px;
+}
+
+body {
+    font-family: Arial;
+    background: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF; /* Choose your desired button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+header {
+    background-color: #b9b9b9d5;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #b9b9b9d5;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+section {
+    max-width: 100%;
+    padding: 30px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#my_skill{
+    background-color: #b700ff;
+    color: white;
+}
+
+#my_education{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+
+#my_education h2 {
+    color: rgba(95, 95, 95, 0.767);
+}
+
+#about_me{
+    background-color: aliceblue;
+}
+
+#abt{
+    color: rgba(95, 95, 95, 0.767);
+}
+
+#projects{
+    background-color: #b700ff;
+    color: white;
+}
+
+#contact{
+    background-color: aliceblue;
+}
+
+#contact p {
+    color: rgba(95, 95, 95, 0.767);
+}
+
+ul.menu {
+    list-style: none;
+    background: #8811b8;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+ul.menu li {
+    display: inline-block;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 150px;
+    font-weight: bold;
+    padding: 13px 10px;
+    text-transform: uppercase;
+    font-family: "Arial";
+    text-align: center;
+    border: 1px;
+    border-radius: 0px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+}
+
+ul.menu li a:hover {
+    background-color: #14c8ff;
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    ul.menu {
+        display: none;
+        background-color: #d3560e;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    ul.menu.active {
+        display: block;
+    }
+
+    ul.menu li {
+        display: block;
+    }
+
+    ul.menu li a {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        text-align: right;
+        padding: 20px;
+        cursor: pointer;
+    }
+}

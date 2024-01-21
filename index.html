@@ -2,110 +2,7 @@
 <html>
 <head>
     <title>Arnab Rong Webpage</title>
-    <style>
-        body {
-            font-family: Arial;
-            background: #f3f3f3;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #b9b9b9d5;
-            color: #000;
-            padding: 20px;
-            text-align: center;
-            font-size: large;
-            font-family: Arial;
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #b9b9b9d5;
-            color: #000;
-            padding: 20px;
-            text-align: center;
-            font-size: large;
-            font-family: Arial;
-            font-weight: bold;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-        }
-
-        ul.menu {
-            list-style: none;
-            background: #d3560e;
-            margin: 0;
-            padding: 0;
-            text-align: right;
-        }
-
-        ul.menu li {
-            display: inline-block;
-        }
-
-        ul.menu li a {
-            text-decoration: none;
-            color: #333;
-            width: 150px;
-            font-weight: bold;
-            padding: 13px 10px;
-            text-transform: uppercase;
-            font-family: "Arial";
-            text-align: center;
-            border: 1px;
-            border-radius: 0px;
-            transition: background-color 0.3s, color 0.3s;
-            display: block;
-        }
-
-        ul.menu li a:hover {
-            background-color: #14c8ff;
-            color: #fff;
-        }
-
-        .menu-toggle {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            ul.menu {
-                display: none;
-                background-color: #d3560e;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                width: 100%;
-            }
-
-            ul.menu.active {
-                display: block;
-            }
-
-            ul.menu li {
-                display: block;
-            }
-
-            ul.menu li a {
-                width: 100%;
-                padding: 15px 0;
-            }
-
-            .menu-toggle {
-                display: block;
-                text-align: right;
-                padding: 20px;
-                cursor: pointer;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
     <header>
@@ -115,17 +12,99 @@
     <div class="menu-toggle">&#9776;</div>
     
     <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="myeducation.html">My Education</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about_me">About Me</a></li>
+        <li><a href="#my_skill">My Skills</a></li>
+        <li><a href="#my_education">My Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <section>
-        <h1>Hi!</h1>
-        <p>This is Arnab Rong's home page. You can navigate to other information about Arnab from here or from the navigation menu above.</p>
+    <section id="about_me">
+        <h1>Hi! My Name is Arnab Rong</h1>
+        <p id="abt">I am an beginner web developer and you are seeing my first webpage where I used External CSS to design this page.</p>
+
+        <h2>Interests</h2>
+        <ul id="abt">
+            <li>Artificial Intelligence<p></p></li>
+            <li>3D Modeling<p></p></li>
+            <li>Animation<p></p></li>
+            <li>Web Development<p></p></li>
+            <li>Android App Development<p></p></li>
+        </ul>
     </section>
+
+    <section id="my_skill">
+        <h1>My Skills</h1>
+        <ul>
+            <li>C
+                <P></P>
+            </li>
+            <li>C++
+                <p></p>
+            </li>
+            <li>Python
+                <p></p>
+            </li>
+            <li>MySQL
+                <p></p>
+            </li>
+            <li>HTML, CSS
+                <p></p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="my_education">
+        <h1>My Education</h1>
+        <ul>
+            <li>
+                <h2>Post-graduate(2022 - current)</h2>
+                <p>Currently Pursuing MCA from Department of Computer Science & Engineering, University of Kalyani</p>
+            </li>
+
+            <li>
+                <h2>Under-graduate(2019 - 2022)</h2>
+                <p>B. Sc in Computer Science from Ananda Mohan College(Affiliated with university of Calcutta)</p>
+            </li>
+
+            <li>
+                <h2>Higher Secondary (2017 - 2019)</h2>
+                <p>From Dr. Shyamaprasad Mukherjee Institution under West Bengal Council of Higher Secondary Education(WBCHSE)</p>
+            </li>
+
+            <li>
+                <h2>Secondary (2015 - 2017)</h2>
+                <p>From Dr. Shyamaprasad Mukherjee Institution under West Bengal Council of Higher Secondary Education(WBCHSE)</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h1>My Projects</h1>
+        <ul>
+            <li>Emotion Recognition System with Computer Vision.
+                <p></p>
+                <ul>
+                    <li>Programming Language used: Python</li>
+                    <p></p>
+                    <li>Libraries used: Pillow, Matplotlib, Tensorflow, Keras, OpenCV</li>
+                    <p></p>
+                </ul>
+            <li>Simple database for Hotel Management.
+            <li>Online Examination System (Ongoing project)</li>
+        </ul>
+    </section>
+
+    <section id="contact"> 
+        <h1>Contact Information</h1>
+        <p>Email: arnabrong@gmail.com</p>
+        <p>Ph: 7439847817</p>
+        <p>Whatsapp: 7439847817</p>
+        <p>facebook: facebook.com</p>
+        <p>github: <a href="https://github.com/ArnabRong13">ArnabRong13</a></p>
+    </section>
+
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
 
     <footer>
         Thank you for visiting.
@@ -138,6 +117,24 @@
         menuToggle.addEventListener('click', () => {
             menu.classList.toggle('active');
         });
+
+        window.onscroll = function() {
+            toggleBackToTopButton();
+        };
+
+        function toggleBackToTopButton() {
+            var button = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 </html>
